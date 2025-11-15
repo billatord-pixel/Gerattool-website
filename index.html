@@ -1,93 +1,180 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gerat Tool</title>
+  <title>GERAT TOOL</title>
+
+  <!-- Bootstrap 5, Font Awesome, AOS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Estilos personalizados -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/+525530381462" class="whatsapp-float" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-  </a>
+  <!-- Barra superior blanca -->
+  <header class="topbar bg-white shadow-sm">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="brand d-flex align-items-center gap-3">
+        <!-- Cambia el src por tu logotipo cuando lo subas -->
+        <img id="logo-top" src="logo-gerat-tool.png" alt="GERAT TOOL" height="42" />
+        <span class="company-name d-none d-md-inline text-uppercase fw-bold">GERAT TOOL</span>
+      </div>
 
-  <!-- Header -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
-    <a class="navbar-brand" href="#">
-      <img src="logo-gerat-tool.png" alt="Gerat Tool Logo" height="50" />
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="#quienes">Quienes Somos</a></li>
-        <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
-        <li class="nav-item"><a class="nav-link" href="#clientes">Clientes</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Hero -->
-  <header class="hero text-center text-white d-flex align-items-center justify-content-center">
-    <div>
-      <h1 class="display-4 fw-bold">GERAT TOOL</h1>
-      <p class="lead">Precisión técnica para la industria metalmecánica</p>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link px-3 text-dark" href="#quienes">Quienes Somos</a></li>
+          <li class="nav-item"><a class="nav-link px-3 text-dark" href="#productos">Productos</a></li>
+          <li class="nav-item"><a class="nav-link px-3 text-dark" href="#clientes">Clientes</a></li>
+          <li class="nav-item"><a class="nav-link px-3 text-dark" href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <!-- Secciones -->
-  <section id="quienes" class="container py-5" data-aos="fade-up">
-    <h2 class="text-center mb-4">Quienes Somos</h2>
-    <p class="text-center">En Gerat Tool nos especializamos en el diseño y distribución de herramientas de corte, fabricadas con materiales de alto rendimiento como carburo de tungsteno, CBN (nitruro cúbico de boro) y PCD (diamante policristalino). Nuestro portafolio incluye end mills personalizados, insertos de geometría optimizada y buriles de precisión, desarrollados para aplicaciones específicas que requieren máxima eficiencia, durabilidad y tolerancias estrictas en procesos de mecanizado de alta exigencia..</p>
+  <!-- Hero azul marino grande -->
+  <section class="hero d-flex align-items-center text-white">
+    <div class="container text-center py-6">
+      <!-- Opcional: cambia la imagen del logo aquí -->
+      <img id="hero-logo" src="logo-gerat-tool.png" alt="GERAT TOOL Logo" class="hero-logo mb-3" />
+      <h1 class="display-4 fw-bold">GERAT TOOL</h1>
+      <p class="lead mt-2">Precisión técnica para la industria metalmecánica</p>
+    </div>
   </section>
 
-  <section id="productos" class="bg-light py-5" data-aos="fade-up">
-    <div class="container">
-      <h2 class="text-center mb-4">Productos</h2>
-      <div class="row text-center">
-        <div class="col-md-3 mb-3"><div class="card p-3">Fresas Helicoidales</div></div>
-        <div class="col-md-3 mb-3"><div class="card p-3">Brocas de Carburo</div></div>
-        <div class="col-md-3 mb-3"><div class="card p-3">Insertos Triangulares</div></div>
-        <div class="col-md-3 mb-3"><div class="card p-3">Portaherramientas</div></div>
+  <!-- Quienes Somos -->
+  <section id="quienes" class="container py-5" data-aos="fade-up">
+    <h2 class="text-center text-navy fw-bold mb-4">QUIENES SOMOS</h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-10 text-center text-muted">
+        <p>
+          Gerat Tool es una empresa especializada en herramientas de corte de alta precisión para la industria metalmecánica.
+          Nuestro compromiso es ofrecer soluciones técnicas confiables y eficientes, combinando materiales de calidad, ingeniería y soporte técnico a medida.
+        </p>
       </div>
     </div>
   </section>
 
-  <section id="clientes" class="container py-5" data-aos="fade-up">
-    <h2 class="text-center mb-4">Clientes</h2>
-    <p class="text-center">Confiamos en relaciones duraderas con empresas líderes del sector. Nuestra red de clientes abarca desde talleres especializados hasta fabricantes globales.</p>
-  </section>
+  <!-- Productos -->
+  <section id="productos" class="py-5 bg-metal">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center text-navy fw-bold mb-4">PRODUCTOS</h2>
 
-  <section id="contacto" class="bg-light py-5" data-aos="fade-up">
-    <div class="container">
-      <h2 class="text-center mb-4">Contacto</h2>
-      <form action="gerat.tool@yahoo.com" method="post" enctype="text/plain" class="mx-auto" style="max-width: 500px;">
-        <input type="text" name="Nombre" class="form-control mb-3" placeholder="Nombre" required />
-        <input type="email" name="Correo" class="form-control mb-3" placeholder="Correo electrónico" required />
-        <textarea name="Mensaje" class="form-control mb-3" placeholder="Mensaje" rows="4" required></textarea>
-        <button type="submit" class="btn btn-primary w-100 mb-2">Enviar por correo</button>
-        <a href="https://wa.me/5215512345678" target="_blank" class="btn btn-success w-100">Escríbenos por WhatsApp</a>
-      </form>
+      <div class="row g-4">
+        <!-- Card producto 1 (cambiar imagen en el img src) -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="card product-card h-100 shadow-sm">
+            <div class="product-image">
+              <img src="placeholder-product-1.png" alt="Fresas Helicoidales" class="w-100 h-100 object-cover" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title fw-semibold">Fresas Helicoidales</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <div class="card product-card h-100 shadow-sm">
+            <div class="product-image">
+              <img src="placeholder-product-2.png" alt="Brocas de Carburo" class="w-100 h-100 object-cover" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title fw-semibold">Brocas de Carburo</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <div class="card product-card h-100 shadow-sm">
+            <div class="product-image">
+              <img src="placeholder-product-3.png" alt="Insertos Triangulares" class="w-100 h-100 object-cover" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title fw-semibold">Insertos Triangulares</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <div class="card product-card h-100 shadow-sm">
+            <div class="product-image">
+              <img src="placeholder-product-4.png" alt="Portaherramientas" class="w-100 h-100 object-cover" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title fw-semibold">Portaherramientas</h5>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
-  <footer class="bg-dark text-white text-center py-3">
+  <!-- Clientes -->
+  <section id="clientes" class="container py-5" data-aos="fade-up">
+    <h2 class="text-center text-navy fw-bold mb-4">CLIENTES</h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-10 text-center text-muted">
+        <p>
+          Confiamos en relaciones duraderas con empresas líderes del sector. Nuestra red de clientes abarca desde talleres especializados hasta fabricantes globales.
+        </p>
+      </div>
+    </div>
+    <!-- Espacio para logos de clientes (añadir imágenes dentro de .client-logos) -->
+    <div class="client-logos mt-4 d-flex justify-content-center flex-wrap gap-4">
+      <!-- Ejemplo: <img src="logo-cliente1.png" alt="Cliente 1" height="48" /> -->
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-5 bg-metal" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center text-navy fw-bold mb-4">CONTACTO</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <form action="mailto:ventas@gerattool.com" method="post" enctype="text/plain" class="card p-4 shadow-sm">
+            <div class="mb-3">
+              <label class="form-label visually-hidden">Nombre</label>
+              <input type="text" name="Nombre" class="form-control" placeholder="Nombre" required />
+            </div>
+            <div class="mb-3">
+              <label class="form-label visually-hidden">Correo</label>
+              <input type="email" name="Correo" class="form-control" placeholder="Correo electrónico" required />
+            </div>
+            <div class="mb-3">
+              <label class="form-label visually-hidden">Mensaje</label>
+              <textarea name="Mensaje" class="form-control" placeholder="Mensaje" rows="4" required></textarea>
+            </div>
+            <div class="d-grid gap-2">
+              <button class="btn btn-navy" type="submit">ENVIAR POR CORREO</button>
+              <a href="https://wa.me/5215512345678" target="_blank" class="btn btn-success">ESCRÍBENOS POR WHATSAPP</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-3 text-center text-muted">
     &copy; 2025 Gerat Tool. Todos los derechos reservados.
   </footer>
 
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/5215512345678" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({ once: true, duration: 700 });
   </script>
 </body>
 </html>
+
 
 

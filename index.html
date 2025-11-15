@@ -2,75 +2,91 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Gerat Tool</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <img src="logo-gerat-tool.png" alt="Gerat Tool Logo" class="logo" />
-    <nav>
-      <ul>
-        <li><a href="#quienes-somos">Quienes Somos</a></li>
-        <li><a href="#productos">Productos</a></li>
-        <li><a href="#clientes">Clientes</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/5215512345678" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <a class="navbar-brand" href="#">
+      <img src="logo-gerat-tool.png" alt="Gerat Tool Logo" height="50" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#quienes">Quienes Somos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#clientes">Clientes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
       </ul>
-    </nav>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero text-center text-white d-flex align-items-center justify-content-center">
+    <div>
+      <h1 class="display-4 fw-bold">GERAT TOOL</h1>
+      <p class="lead">Precisión técnica para la industria metalmecánica</p>
+    </div>
   </header>
 
-  <section id="quienes-somos">
-    <h2>Quienes Somos</h2>
-    <p>Gerat Tool es una empresa especializada en herramientas de corte de alta precisión para la industria metalmecánica. Nuestro compromiso es ofrecer soluciones técnicas confiables y eficientes.</p>
+  <!-- Secciones -->
+  <section id="quienes" class="container py-5" data-aos="fade-up">
+    <h2 class="text-center mb-4">Quienes Somos</h2>
+    <p class="text-center">Gerat Tool es una empresa especializada en herramientas de corte de alta precisión para la industria metalmecánica. Nuestro compromiso es ofrecer soluciones técnicas confiables y eficientes.</p>
   </section>
 
-  <section id="productos">
-    <h2>Productos</h2>
-    <div class="productos-grid">
-      <div class="producto">Fresas Helicoidales</div>
-      <div class="producto">Brocas de Carburo</div>
-      <div class="producto">Insertos Triangulares</div>
-      <div class="producto">Portaherramientas</div>
+  <section id="productos" class="bg-light py-5" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-4">Productos</h2>
+      <div class="row text-center">
+        <div class="col-md-3 mb-3"><div class="card p-3">Fresas Helicoidales</div></div>
+        <div class="col-md-3 mb-3"><div class="card p-3">Brocas de Carburo</div></div>
+        <div class="col-md-3 mb-3"><div class="card p-3">Insertos Triangulares</div></div>
+        <div class="col-md-3 mb-3"><div class="card p-3">Portaherramientas</div></div>
+      </div>
     </div>
   </section>
 
-  <section id="clientes">
-    <h2>Clientes</h2>
-    <p>Confiamos en relaciones duraderas con empresas líderes del sector. Nuestra red de clientes abarca desde talleres especializados hasta fabricantes globales.</p>
+  <section id="clientes" class="container py-5" data-aos="fade-up">
+    <h2 class="text-center mb-4">Clientes</h2>
+    <p class="text-center">Confiamos en relaciones duraderas con empresas líderes del sector. Nuestra red de clientes abarca desde talleres especializados hasta fabricantes globales.</p>
   </section>
 
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <form>
-      <input type="text" placeholder="Nombre" required />
-      <input type="email" placeholder="Correo electrónico" required />
-      <textarea placeholder="Mensaje" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
+  <section id="contacto" class="bg-light py-5" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-4">Contacto</h2>
+      <form action="mailto:ventas@gerattool.com" method="post" enctype="text/plain" class="mx-auto" style="max-width: 500px;">
+        <input type="text" name="Nombre" class="form-control mb-3" placeholder="Nombre" required />
+        <input type="email" name="Correo" class="form-control mb-3" placeholder="Correo electrónico" required />
+        <textarea name="Mensaje" class="form-control mb-3" placeholder="Mensaje" rows="4" required></textarea>
+        <button type="submit" class="btn btn-primary w-100 mb-2">Enviar por correo</button>
+        <a href="https://wa.me/5215512345678" target="_blank" class="btn btn-success w-100">Escríbenos por WhatsApp</a>
+      </form>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Gerat Tool. Todos los derechos reservados.</p>
+  <footer class="bg-dark text-white text-center py-3">
+    &copy; 2025 Gerat Tool. Todos los derechos reservados.
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
-
-<section id="contacto">
-  <h2>Contacto</h2>
-  <form action="gerat.tool@yahoo.com" method="post" enctype="text/plain">
-    <input type="text" name="Nombre" placeholder="Nombre" required />
-    <input type="email" name="Correo" placeholder="Correo electrónico" required />
-    <textarea name="Mensaje" placeholder="Mensaje" required></textarea>
-    <button type="submit">Enviar por correo</button>
-  </form>
-
-  <div class="whatsapp">
-    <p>¿Prefieres WhatsApp?</p>
-    <a href="https://wa.me/+525530381462" target="_blank">
-      <button>Escríbenos por WhatsApp</button>
-    </a>
-  </div>
-</section>
-
-
 
